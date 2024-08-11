@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Set the font family for the body */
+    background: #222; /* Set the background color of the page */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.container {
+    width: 80%; /* Container width relative to its parent */
+    max-width: 525px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.card {
+    background: linear-gradient(135deg, #9edee6e3, #8c899c); /* Gradient background for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for the card */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    margin-top: 20px; /* Top margin */
+    margin-left: 80px; /* Left margin */
+    margin-right: -70px; /* Negative right margin */
+}
+
+.search {
+    display: flex; /* Use flexbox for the search section */
+    justify-content: space-between; /* Space between the input and button */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+.search input {
+    border: 0; /* Remove border */
+    outline: 0; /* Remove outline */
+    background: #add1d8; /* Input background color */
+    color: #555; /* Input text color */
+    padding: 10px 35px; /* Padding inside the input */
+    height: 50px; /* Input height */
+    border-radius: 30px; /* Rounded corners */
+    flex: 1; /* Allow input to grow */
+    margin-right: 16px; /* Right margin */
+    font-size: 18px; /* Font size */
+}
+
+.search button {
+    border: 0; /* Remove border */
+    outline: 0; /* Remove outline */
+    background: #add1d8; /* Button background color */
+    height: 60px; /* Button height */
+    border-radius: 50px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 60px; /* Button width */
+    margin-top: 10px; /* Top margin */
+}
+
+.search button img {
+    width: 16px; /* Set width of the button image */
+}
+
+.error {
+    display: none; /* Hide error message by default */
+    color: red; /* Error message color */
+    text-align: center; /* Center the error message */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+.weather {
+    text-align: center; /* Center-align the weather section */
+}
+
+.weather-icon {
+    width: 100px; /* Set width of the weather icon */
+    margin-bottom: 10px; /* Bottom margin */
+}
+
+.temp {
+    font-size: 48px; /* Font size for temperature */
+    margin: 0; /* Remove default margin */
+}
+
+.city {
+    font-size: 32px; /* Font size for city name */
+    margin: 0; /* Remove default margin */
+}
+
+.date {
+    font-size: 16px; /* Font size for the date */
+    margin: 0; /* Remove default margin */
+    color: #181515; /* Set color for the date */
+}
+
+.details {
+    display: flex; /* Use flexbox for details section */
+    justify-content: space-evenly; /* Evenly space the details columns */
+    margin-top: 20px; /* Top margin */
+}
+
+.col {
+    display: flex; /* Use flexbox for each detail column */
+    align-items: center; /* Align items vertically */
+}
+
+.col img {
+    width: 32px; /* Set width of the detail icons */
+    margin-right: 10px; /* Right margin for the icons */
+}
+
+.forecast {
+    margin-top: 20px; /* Top margin for the forecast section */
+}
+
+.forecast h3 {
+    text-align: center; /* Center-align the forecast heading */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+.forecast-container {
+    display: flex; /* Use flexbox for forecast container */
+    justify-content: space-between; /* Space between forecast cards */
+}
+
+.forecast-day {
+    background: linear-gradient(135deg, #9eb8bbe3, #5b548a); /* Gradient background for forecast cards */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding inside the forecast cards */
+    text-align: center; /* Center-align text inside forecast cards */
+    flex: 1; /* Allow forecast cards to grow */
+    margin: 0 5px; /* Left and right margin */
+}
+
+.forecast-day h4 {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Font size for day name */
+    color: #333; /* Set color for day name */
+}
+
+.forecast-day img {
+    width: 50px; /* Set width of the forecast icons */
+    margin: 10px 0; /* Vertical margin */
+}
+
+.forecast-day p {
+    margin: 0; /* Remove default margin */
+    font-size: 18px; /* Font size for temperature */
+    color: #555; /* Set color for temperature */
+}
+
+/* Map Styles */
+#map {
+    width: 50%; /* Set width of the map */
+    height: 500px; /* Set height of the map */
+    margin-top: 20px; /* Top margin */
+    border-radius: 10px; /* Rounded corners */
+    align-items: center; /* Center-align the map */
+    margin-right: 80px; /* Right margin */
+    margin-left: 2px; /* Left margin */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .forecast-container {
+        flex-direction: column; /* Stack forecast cards vertically on small screens */
+        align-items: center; /* Center-align forecast cards */
+    }
+
+    .forecast-day {
+        margin-bottom: 10px; /* Bottom margin for forecast cards */
+        width: 80%; /* Set width of forecast cards */
+    }
+
+    .forecast-day:last-child {
+        margin-bottom: 0; /* Remove bottom margin from last forecast card */
+    }
+}
